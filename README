@@ -1,0 +1,34 @@
+temper-q
+
+1) Introduction
+2) Requirements
+3) Usage
+4) License
+
+
+-----------------------------------------------------------------------
+Introduction
+
+Queries temperature from a TEMPer 413d:2107 USB thermometer.
+
+
+-----------------------------------------------------------------------
+Requirements
+
+You need hidaip wrappers for python. Install on debian for example via
+$ apt install python3-hidapi
+
+
+-----------------------------------------------------------------------
+Usage
+
+./temper-q.py
+
+If you get "Could not open connection to device." you are probably not
+authorized to access the device.
+
+
+-----------------------------------------------------------------------
+License
+
+See file LICENSE.
