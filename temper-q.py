@@ -10,6 +10,9 @@ def main():
         temp_raw = dev.read(8)
         dev.close()
         print(dump_to_temperature(temp_raw[2:4]))
+        exit(0)
+    print('No temper thermometer found')
+    exit(1)
 
 def dump_to_temperature(bytes):
     temp = (bytes[0] <<8) + bytes[1]
